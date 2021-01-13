@@ -1,0 +1,45 @@
+{
+    "name": "mitsuru793/file-structure-convertor-cli",
+    "description": "Convert file structure to other one. For example, yaml to json.",
+    "type": "library",
+    "homepage": "https://github.com/mitsuru793/php-structure-convertor-cli",
+    "license": "MIT",
+    "keywords": [
+        "file",
+        "structure",
+        "cli",
+        "convert"
+    ],
+    "authors": [
+        {
+            "name": "mitsuru793",
+            "email": "mitsuru793@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit --color=always",
+        "analyze": "phpstan analyze ./src"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "symfony/console": "^5.2",
+        "symfony/yaml": "^5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.2",
+        "phpstan/phpstan": "^0.12.65"
+    },
+    "autoload": {
+        "psr-4": {
+            "FileStructureConvertor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UnitTest\\": "tests/unit/",
+            "TestHelper\\": "tests/helper/"
+        }
+    }
+}

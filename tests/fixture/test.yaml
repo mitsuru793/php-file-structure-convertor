@@ -1,0 +1,4 @@
+users:
+    mike: { age: 19 }
+join:
+    - mike
